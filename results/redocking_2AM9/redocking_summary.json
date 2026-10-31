@@ -1,0 +1,1031 @@
+{
+  "protocol": {
+    "scoring_function": "vina",
+    "exhaustiveness": 16,
+    "n_poses": 10,
+    "output_energy_range": 100.0,
+    "seeds": [
+      42,
+      123,
+      2026,
+      7,
+      99
+    ],
+    "cpu": 4,
+    "center_A": [
+      27.186,
+      2.704,
+      5.234
+    ],
+    "size_A": [
+      18.0,
+      21.0,
+      16.0
+    ],
+    "box_file": "data/prepared/2AM9/vina_box_repaired.txt",
+    "receptor": "data/prepared/2AM9/receptor_repaired.pdbqt",
+    "ligand": "data/prepared/2AM9/TES.pdbqt"
+  },
+  "versions": {
+    "vina": "1.2.7",
+    "meeko": "0.8.0",
+    "rdkit": "2026.3.1",
+    "gemmi": "0.7.5"
+  },
+  "input_checks": {
+    "receptor": "data/prepared/2AM9/receptor_repaired.pdbqt",
+    "ligand": "data/prepared/2AM9/TES.pdbqt",
+    "crystal_reference": "data/prepared/2AM9/TES_crystal.sdf",
+    "box_config": "data/prepared/2AM9/vina_box_repaired.txt",
+    "box_center_A": [
+      27.186,
+      2.704,
+      5.234
+    ],
+    "box_size_A": [
+      18.0,
+      21.0,
+      16.0
+    ],
+    "tes_formula": "C19H28O2",
+    "tes_heavy_atoms": 21
+  },
+  "top_score_summary": {
+    "mean": -10.905,
+    "sd": 0.0070000000000001806,
+    "min": -10.912,
+    "max": -10.897
+  },
+  "top_rmsd_summary": {
+    "mean": 0.22744640625803952,
+    "sd": 0.004135919071864972,
+    "min": 0.2208456690175506,
+    "max": 0.2313950446026592
+  },
+  "minimum_pose_rmsd_summary": {
+    "mean": 0.22744640625803952,
+    "sd": 0.004135919071864972,
+    "min": 0.2208456690175506,
+    "max": 0.2313950446026592
+  },
+  "top_rmsd_le_2A_count": 5,
+  "near_top_score_deviating_pose_count": 11,
+  "near_top_score_deviating_examples": [
+    {
+      "seed": 42,
+      "pose": 3,
+      "vina_score_kcal_mol": -8.777,
+      "crystal_rmsd_A": 6.597962510177993,
+      "mapping_count": 1,
+      "mapping_chirality_used": true,
+      "pdbqt": "results/redocking_2AM9/poses/seed_42_pose_03.pdbqt",
+      "sdf": "results/redocking_2AM9/poses/seed_42_pose_03.sdf"
+    },
+    {
+      "seed": 42,
+      "pose": 4,
+      "vina_score_kcal_mol": -8.507,
+      "crystal_rmsd_A": 6.603371876765471,
+      "mapping_count": 1,
+      "mapping_chirality_used": true,
+      "pdbqt": "results/redocking_2AM9/poses/seed_42_pose_04.pdbqt",
+      "sdf": "results/redocking_2AM9/poses/seed_42_pose_04.sdf"
+    },
+    {
+      "seed": 123,
+      "pose": 2,
+      "vina_score_kcal_mol": -9.503,
+      "crystal_rmsd_A": 3.0013972539786336,
+      "mapping_count": 1,
+      "mapping_chirality_used": true,
+      "pdbqt": "results/redocking_2AM9/poses/seed_123_pose_02.pdbqt",
+      "sdf": "results/redocking_2AM9/poses/seed_123_pose_02.sdf"
+    },
+    {
+      "seed": 123,
+      "pose": 3,
+      "vina_score_kcal_mol": -8.766,
+      "crystal_rmsd_A": 6.596283444919138,
+      "mapping_count": 1,
+      "mapping_chirality_used": true,
+      "pdbqt": "results/redocking_2AM9/poses/seed_123_pose_03.pdbqt",
+      "sdf": "results/redocking_2AM9/poses/seed_123_pose_03.sdf"
+    },
+    {
+      "seed": 123,
+      "pose": 4,
+      "vina_score_kcal_mol": -8.401,
+      "crystal_rmsd_A": 3.176561700659258,
+      "mapping_count": 1,
+      "mapping_chirality_used": true,
+      "pdbqt": "results/redocking_2AM9/poses/seed_123_pose_04.pdbqt",
+      "sdf": "results/redocking_2AM9/poses/seed_123_pose_04.sdf"
+    },
+    {
+      "seed": 123,
+      "pose": 5,
+      "vina_score_kcal_mol": -7.898,
+      "crystal_rmsd_A": 6.3214156115013775,
+      "mapping_count": 1,
+      "mapping_chirality_used": true,
+      "pdbqt": "results/redocking_2AM9/poses/seed_123_pose_05.pdbqt",
+      "sdf": "results/redocking_2AM9/poses/seed_123_pose_05.sdf"
+    },
+    {
+      "seed": 2026,
+      "pose": 3,
+      "vina_score_kcal_mol": -8.779,
+      "crystal_rmsd_A": 6.59949765043486,
+      "mapping_count": 1,
+      "mapping_chirality_used": true,
+      "pdbqt": "results/redocking_2AM9/poses/seed_2026_pose_03.pdbqt",
+      "sdf": "results/redocking_2AM9/poses/seed_2026_pose_03.sdf"
+    },
+    {
+      "seed": 2026,
+      "pose": 4,
+      "vina_score_kcal_mol": -7.916,
+      "crystal_rmsd_A": 6.322795079634293,
+      "mapping_count": 1,
+      "mapping_chirality_used": true,
+      "pdbqt": "results/redocking_2AM9/poses/seed_2026_pose_04.pdbqt",
+      "sdf": "results/redocking_2AM9/poses/seed_2026_pose_04.sdf"
+    },
+    {
+      "seed": 7,
+      "pose": 3,
+      "vina_score_kcal_mol": -8.774,
+      "crystal_rmsd_A": 6.5990797013494165,
+      "mapping_count": 1,
+      "mapping_chirality_used": true,
+      "pdbqt": "results/redocking_2AM9/poses/seed_7_pose_03.pdbqt",
+      "sdf": "results/redocking_2AM9/poses/seed_7_pose_03.sdf"
+    },
+    {
+      "seed": 7,
+      "pose": 4,
+      "vina_score_kcal_mol": -7.91,
+      "crystal_rmsd_A": 6.321661968787879,
+      "mapping_count": 1,
+      "mapping_chirality_used": true,
+      "pdbqt": "results/redocking_2AM9/poses/seed_7_pose_04.pdbqt",
+      "sdf": "results/redocking_2AM9/poses/seed_7_pose_04.sdf"
+    }
+  ],
+  "crystal_pose_interactions": {
+    "key_residue_contacts": {
+      "ASN705": {
+        "contact_count_within_4A": 7,
+        "minimum_distance_A": 2.662,
+        "contacts": [
+          {
+            "protein_atom": "OD1",
+            "ligand_atom": "atom_19",
+            "distance_A": 2.662
+          },
+          {
+            "protein_atom": "OD1",
+            "ligand_atom": "atom_13",
+            "distance_A": 3.287
+          },
+          {
+            "protein_atom": "OD1",
+            "ligand_atom": "atom_18",
+            "distance_A": 3.349
+          },
+          {
+            "protein_atom": "OD1",
+            "ligand_atom": "atom_14",
+            "distance_A": 3.736
+          },
+          {
+            "protein_atom": "CG",
+            "ligand_atom": "atom_19",
+            "distance_A": 3.753
+          },
+          {
+            "protein_atom": "N",
+            "ligand_atom": "atom_13",
+            "distance_A": 3.883
+          },
+          {
+            "protein_atom": "CA",
+            "ligand_atom": "atom_13",
+            "distance_A": 3.913
+          }
+        ]
+      },
+      "GLN711": {
+        "contact_count_within_4A": 0,
+        "minimum_distance_A": null,
+        "contacts": []
+      },
+      "ARG752": {
+        "contact_count_within_4A": 1,
+        "minimum_distance_A": 2.816,
+        "contacts": [
+          {
+            "protein_atom": "NH2",
+            "ligand_atom": "atom_4",
+            "distance_A": 2.816
+          }
+        ]
+      },
+      "THR877": {
+        "contact_count_within_4A": 7,
+        "minimum_distance_A": 2.823,
+        "contacts": [
+          {
+            "protein_atom": "OG1",
+            "ligand_atom": "atom_19",
+            "distance_A": 2.823
+          },
+          {
+            "protein_atom": "OG1",
+            "ligand_atom": "atom_20",
+            "distance_A": 3.277
+          },
+          {
+            "protein_atom": "CB",
+            "ligand_atom": "atom_20",
+            "distance_A": 3.6
+          },
+          {
+            "protein_atom": "CB",
+            "ligand_atom": "atom_19",
+            "distance_A": 3.633
+          },
+          {
+            "protein_atom": "OG1",
+            "ligand_atom": "atom_18",
+            "distance_A": 3.794
+          },
+          {
+            "protein_atom": "CB",
+            "ligand_atom": "atom_17",
+            "distance_A": 3.879
+          },
+          {
+            "protein_atom": "OG1",
+            "ligand_atom": "atom_17",
+            "distance_A": 3.977
+          }
+        ]
+      }
+    },
+    "hbond_candidates": [],
+    "minimum_protein_ligand_heavy_atom_distance": {
+      "protein_atom": "ASN705:OD1",
+      "ligand_atom": "atom_19",
+      "distance_A": 2.662
+    },
+    "obvious_heavy_atom_clash_lt_2A": false
+  },
+  "runs": [
+    {
+      "seed": 42,
+      "top_pose": {
+        "seed": 42,
+        "pose": 1,
+        "vina_score_kcal_mol": -10.91,
+        "crystal_rmsd_A": 0.23038756166822139,
+        "mapping_count": 1,
+        "mapping_chirality_used": true,
+        "pdbqt": "results/redocking_2AM9/poses/seed_42_pose_01.pdbqt",
+        "sdf": "results/redocking_2AM9/poses/seed_42_pose_01.sdf"
+      },
+      "minimum_crystal_rmsd_pose": {
+        "seed": 42,
+        "pose": 1,
+        "vina_score_kcal_mol": -10.91,
+        "crystal_rmsd_A": 0.23038756166822139,
+        "mapping_count": 1,
+        "mapping_chirality_used": true,
+        "pdbqt": "results/redocking_2AM9/poses/seed_42_pose_01.pdbqt",
+        "sdf": "results/redocking_2AM9/poses/seed_42_pose_01.sdf"
+      },
+      "all_pose_rmsds_A": [
+        0.23038756166822139,
+        2.986088961453474,
+        6.597962510177993,
+        6.603371876765471,
+        6.318882051514523,
+        6.659843538130679,
+        6.437086408350553,
+        2.787882376079942,
+        2.941339409828373,
+        4.193681676045524
+      ],
+      "top_interactions": {
+        "key_residue_contacts": {
+          "ASN705": {
+            "contact_count_within_4A": 6,
+            "minimum_distance_A": 2.866,
+            "contacts": [
+              {
+                "protein_atom": "OD1",
+                "ligand_atom": "atom_19",
+                "distance_A": 2.866
+              },
+              {
+                "protein_atom": "OD1",
+                "ligand_atom": "atom_13",
+                "distance_A": 3.416
+              },
+              {
+                "protein_atom": "OD1",
+                "ligand_atom": "atom_18",
+                "distance_A": 3.617
+              },
+              {
+                "protein_atom": "OD1",
+                "ligand_atom": "atom_14",
+                "distance_A": 3.915
+              },
+              {
+                "protein_atom": "CG",
+                "ligand_atom": "atom_19",
+                "distance_A": 3.959
+              },
+              {
+                "protein_atom": "N",
+                "ligand_atom": "atom_13",
+                "distance_A": 3.991
+              }
+            ]
+          },
+          "GLN711": {
+            "contact_count_within_4A": 0,
+            "minimum_distance_A": null,
+            "contacts": []
+          },
+          "ARG752": {
+            "contact_count_within_4A": 1,
+            "minimum_distance_A": 2.818,
+            "contacts": [
+              {
+                "protein_atom": "NH2",
+                "ligand_atom": "atom_4",
+                "distance_A": 2.818
+              }
+            ]
+          },
+          "THR877": {
+            "contact_count_within_4A": 6,
+            "minimum_distance_A": 2.844,
+            "contacts": [
+              {
+                "protein_atom": "OG1",
+                "ligand_atom": "atom_19",
+                "distance_A": 2.844
+              },
+              {
+                "protein_atom": "OG1",
+                "ligand_atom": "atom_20",
+                "distance_A": 3.303
+              },
+              {
+                "protein_atom": "CB",
+                "ligand_atom": "atom_19",
+                "distance_A": 3.565
+              },
+              {
+                "protein_atom": "CB",
+                "ligand_atom": "atom_20",
+                "distance_A": 3.601
+              },
+              {
+                "protein_atom": "CB",
+                "ligand_atom": "atom_17",
+                "distance_A": 3.806
+              },
+              {
+                "protein_atom": "OG1",
+                "ligand_atom": "atom_18",
+                "distance_A": 3.821
+              }
+            ]
+          }
+        },
+        "hbond_candidates": [],
+        "minimum_protein_ligand_heavy_atom_distance": {
+          "protein_atom": "ARG752:NH2",
+          "ligand_atom": "atom_4",
+          "distance_A": 2.818
+        },
+        "obvious_heavy_atom_clash_lt_2A": false
+      }
+    },
+    {
+      "seed": 123,
+      "top_pose": {
+        "seed": 123,
+        "pose": 1,
+        "vina_score_kcal_mol": -10.898,
+        "crystal_rmsd_A": 0.22783557145241318,
+        "mapping_count": 1,
+        "mapping_chirality_used": true,
+        "pdbqt": "results/redocking_2AM9/poses/seed_123_pose_01.pdbqt",
+        "sdf": "results/redocking_2AM9/poses/seed_123_pose_01.sdf"
+      },
+      "minimum_crystal_rmsd_pose": {
+        "seed": 123,
+        "pose": 1,
+        "vina_score_kcal_mol": -10.898,
+        "crystal_rmsd_A": 0.22783557145241318,
+        "mapping_count": 1,
+        "mapping_chirality_used": true,
+        "pdbqt": "results/redocking_2AM9/poses/seed_123_pose_01.pdbqt",
+        "sdf": "results/redocking_2AM9/poses/seed_123_pose_01.sdf"
+      },
+      "all_pose_rmsds_A": [
+        0.22783557145241318,
+        3.0013972539786336,
+        6.596283444919138,
+        3.176561700659258,
+        6.3214156115013775,
+        6.66113113160077,
+        2.5581871836647663,
+        3.2634756377358234,
+        3.2377439823491443,
+        4.190239395365877
+      ],
+      "top_interactions": {
+        "key_residue_contacts": {
+          "ASN705": {
+            "contact_count_within_4A": 6,
+            "minimum_distance_A": 2.85,
+            "contacts": [
+              {
+                "protein_atom": "OD1",
+                "ligand_atom": "atom_19",
+                "distance_A": 2.85
+              },
+              {
+                "protein_atom": "OD1",
+                "ligand_atom": "atom_13",
+                "distance_A": 3.408
+              },
+              {
+                "protein_atom": "OD1",
+                "ligand_atom": "atom_18",
+                "distance_A": 3.605
+              },
+              {
+                "protein_atom": "OD1",
+                "ligand_atom": "atom_14",
+                "distance_A": 3.9
+              },
+              {
+                "protein_atom": "CG",
+                "ligand_atom": "atom_19",
+                "distance_A": 3.942
+              },
+              {
+                "protein_atom": "N",
+                "ligand_atom": "atom_13",
+                "distance_A": 3.979
+              }
+            ]
+          },
+          "GLN711": {
+            "contact_count_within_4A": 0,
+            "minimum_distance_A": null,
+            "contacts": []
+          },
+          "ARG752": {
+            "contact_count_within_4A": 1,
+            "minimum_distance_A": 2.826,
+            "contacts": [
+              {
+                "protein_atom": "NH2",
+                "ligand_atom": "atom_4",
+                "distance_A": 2.826
+              }
+            ]
+          },
+          "THR877": {
+            "contact_count_within_4A": 7,
+            "minimum_distance_A": 2.847,
+            "contacts": [
+              {
+                "protein_atom": "OG1",
+                "ligand_atom": "atom_19",
+                "distance_A": 2.847
+              },
+              {
+                "protein_atom": "OG1",
+                "ligand_atom": "atom_20",
+                "distance_A": 3.295
+              },
+              {
+                "protein_atom": "CB",
+                "ligand_atom": "atom_19",
+                "distance_A": 3.574
+              },
+              {
+                "protein_atom": "CB",
+                "ligand_atom": "atom_20",
+                "distance_A": 3.602
+              },
+              {
+                "protein_atom": "CB",
+                "ligand_atom": "atom_17",
+                "distance_A": 3.791
+              },
+              {
+                "protein_atom": "OG1",
+                "ligand_atom": "atom_18",
+                "distance_A": 3.815
+              },
+              {
+                "protein_atom": "OG1",
+                "ligand_atom": "atom_17",
+                "distance_A": 3.99
+              }
+            ]
+          }
+        },
+        "hbond_candidates": [],
+        "minimum_protein_ligand_heavy_atom_distance": {
+          "protein_atom": "ARG752:NH2",
+          "ligand_atom": "atom_4",
+          "distance_A": 2.826
+        },
+        "obvious_heavy_atom_clash_lt_2A": false
+      }
+    },
+    {
+      "seed": 2026,
+      "top_pose": {
+        "seed": 2026,
+        "pose": 1,
+        "vina_score_kcal_mol": -10.897,
+        "crystal_rmsd_A": 0.2208456690175506,
+        "mapping_count": 1,
+        "mapping_chirality_used": true,
+        "pdbqt": "results/redocking_2AM9/poses/seed_2026_pose_01.pdbqt",
+        "sdf": "results/redocking_2AM9/poses/seed_2026_pose_01.sdf"
+      },
+      "minimum_crystal_rmsd_pose": {
+        "seed": 2026,
+        "pose": 1,
+        "vina_score_kcal_mol": -10.897,
+        "crystal_rmsd_A": 0.2208456690175506,
+        "mapping_count": 1,
+        "mapping_chirality_used": true,
+        "pdbqt": "results/redocking_2AM9/poses/seed_2026_pose_01.pdbqt",
+        "sdf": "results/redocking_2AM9/poses/seed_2026_pose_01.sdf"
+      },
+      "all_pose_rmsds_A": [
+        0.2208456690175506,
+        2.989316349618293,
+        6.59949765043486,
+        6.322795079634293,
+        6.661678259875303,
+        2.8002711178265107,
+        2.758761661463691,
+        6.7394858536411055,
+        6.254402007881367,
+        4.189904681266059
+      ],
+      "top_interactions": {
+        "key_residue_contacts": {
+          "ASN705": {
+            "contact_count_within_4A": 6,
+            "minimum_distance_A": 2.872,
+            "contacts": [
+              {
+                "protein_atom": "OD1",
+                "ligand_atom": "atom_19",
+                "distance_A": 2.872
+              },
+              {
+                "protein_atom": "OD1",
+                "ligand_atom": "atom_13",
+                "distance_A": 3.417
+              },
+              {
+                "protein_atom": "OD1",
+                "ligand_atom": "atom_18",
+                "distance_A": 3.622
+              },
+              {
+                "protein_atom": "OD1",
+                "ligand_atom": "atom_14",
+                "distance_A": 3.916
+              },
+              {
+                "protein_atom": "CG",
+                "ligand_atom": "atom_19",
+                "distance_A": 3.965
+              },
+              {
+                "protein_atom": "N",
+                "ligand_atom": "atom_13",
+                "distance_A": 3.984
+              }
+            ]
+          },
+          "GLN711": {
+            "contact_count_within_4A": 0,
+            "minimum_distance_A": null,
+            "contacts": []
+          },
+          "ARG752": {
+            "contact_count_within_4A": 1,
+            "minimum_distance_A": 2.802,
+            "contacts": [
+              {
+                "protein_atom": "NH2",
+                "ligand_atom": "atom_4",
+                "distance_A": 2.802
+              }
+            ]
+          },
+          "THR877": {
+            "contact_count_within_4A": 6,
+            "minimum_distance_A": 2.847,
+            "contacts": [
+              {
+                "protein_atom": "OG1",
+                "ligand_atom": "atom_19",
+                "distance_A": 2.847
+              },
+              {
+                "protein_atom": "OG1",
+                "ligand_atom": "atom_20",
+                "distance_A": 3.316
+              },
+              {
+                "protein_atom": "CB",
+                "ligand_atom": "atom_19",
+                "distance_A": 3.565
+              },
+              {
+                "protein_atom": "CB",
+                "ligand_atom": "atom_20",
+                "distance_A": 3.611
+              },
+              {
+                "protein_atom": "CB",
+                "ligand_atom": "atom_17",
+                "distance_A": 3.82
+              },
+              {
+                "protein_atom": "OG1",
+                "ligand_atom": "atom_18",
+                "distance_A": 3.831
+              }
+            ]
+          }
+        },
+        "hbond_candidates": [],
+        "minimum_protein_ligand_heavy_atom_distance": {
+          "protein_atom": "ARG752:NH2",
+          "ligand_atom": "atom_4",
+          "distance_A": 2.802
+        },
+        "obvious_heavy_atom_clash_lt_2A": false
+      }
+    },
+    {
+      "seed": 7,
+      "top_pose": {
+        "seed": 7,
+        "pose": 1,
+        "vina_score_kcal_mol": -10.908,
+        "crystal_rmsd_A": 0.22676818454935307,
+        "mapping_count": 1,
+        "mapping_chirality_used": true,
+        "pdbqt": "results/redocking_2AM9/poses/seed_7_pose_01.pdbqt",
+        "sdf": "results/redocking_2AM9/poses/seed_7_pose_01.sdf"
+      },
+      "minimum_crystal_rmsd_pose": {
+        "seed": 7,
+        "pose": 1,
+        "vina_score_kcal_mol": -10.908,
+        "crystal_rmsd_A": 0.22676818454935307,
+        "mapping_count": 1,
+        "mapping_chirality_used": true,
+        "pdbqt": "results/redocking_2AM9/poses/seed_7_pose_01.pdbqt",
+        "sdf": "results/redocking_2AM9/poses/seed_7_pose_01.sdf"
+      },
+      "all_pose_rmsds_A": [
+        0.22676818454935307,
+        2.9838161647061816,
+        6.5990797013494165,
+        6.321661968787879,
+        6.660649743080626,
+        6.4134755156994405,
+        6.619225325123923,
+        5.593757583660728,
+        5.438657808862841,
+        5.40254585489894
+      ],
+      "top_interactions": {
+        "key_residue_contacts": {
+          "ASN705": {
+            "contact_count_within_4A": 5,
+            "minimum_distance_A": 2.866,
+            "contacts": [
+              {
+                "protein_atom": "OD1",
+                "ligand_atom": "atom_19",
+                "distance_A": 2.866
+              },
+              {
+                "protein_atom": "OD1",
+                "ligand_atom": "atom_13",
+                "distance_A": 3.411
+              },
+              {
+                "protein_atom": "OD1",
+                "ligand_atom": "atom_18",
+                "distance_A": 3.607
+              },
+              {
+                "protein_atom": "OD1",
+                "ligand_atom": "atom_14",
+                "distance_A": 3.912
+              },
+              {
+                "protein_atom": "CG",
+                "ligand_atom": "atom_19",
+                "distance_A": 3.961
+              }
+            ]
+          },
+          "GLN711": {
+            "contact_count_within_4A": 0,
+            "minimum_distance_A": null,
+            "contacts": []
+          },
+          "ARG752": {
+            "contact_count_within_4A": 1,
+            "minimum_distance_A": 2.825,
+            "contacts": [
+              {
+                "protein_atom": "NH2",
+                "ligand_atom": "atom_4",
+                "distance_A": 2.825
+              }
+            ]
+          },
+          "THR877": {
+            "contact_count_within_4A": 7,
+            "minimum_distance_A": 2.803,
+            "contacts": [
+              {
+                "protein_atom": "OG1",
+                "ligand_atom": "atom_19",
+                "distance_A": 2.803
+              },
+              {
+                "protein_atom": "OG1",
+                "ligand_atom": "atom_20",
+                "distance_A": 3.299
+              },
+              {
+                "protein_atom": "CB",
+                "ligand_atom": "atom_19",
+                "distance_A": 3.533
+              },
+              {
+                "protein_atom": "CB",
+                "ligand_atom": "atom_20",
+                "distance_A": 3.596
+              },
+              {
+                "protein_atom": "CB",
+                "ligand_atom": "atom_17",
+                "distance_A": 3.772
+              },
+              {
+                "protein_atom": "OG1",
+                "ligand_atom": "atom_18",
+                "distance_A": 3.786
+              },
+              {
+                "protein_atom": "OG1",
+                "ligand_atom": "atom_17",
+                "distance_A": 3.975
+              }
+            ]
+          }
+        },
+        "hbond_candidates": [],
+        "minimum_protein_ligand_heavy_atom_distance": {
+          "protein_atom": "THR877:OG1",
+          "ligand_atom": "atom_19",
+          "distance_A": 2.803
+        },
+        "obvious_heavy_atom_clash_lt_2A": false
+      }
+    },
+    {
+      "seed": 99,
+      "top_pose": {
+        "seed": 99,
+        "pose": 1,
+        "vina_score_kcal_mol": -10.912,
+        "crystal_rmsd_A": 0.2313950446026592,
+        "mapping_count": 1,
+        "mapping_chirality_used": true,
+        "pdbqt": "results/redocking_2AM9/poses/seed_99_pose_01.pdbqt",
+        "sdf": "results/redocking_2AM9/poses/seed_99_pose_01.sdf"
+      },
+      "minimum_crystal_rmsd_pose": {
+        "seed": 99,
+        "pose": 1,
+        "vina_score_kcal_mol": -10.912,
+        "crystal_rmsd_A": 0.2313950446026592,
+        "mapping_count": 1,
+        "mapping_chirality_used": true,
+        "pdbqt": "results/redocking_2AM9/poses/seed_99_pose_01.pdbqt",
+        "sdf": "results/redocking_2AM9/poses/seed_99_pose_01.sdf"
+      },
+      "all_pose_rmsds_A": [
+        0.2313950446026592,
+        2.9915701722069126,
+        6.598308704653395,
+        6.32101331162293,
+        6.660780792212334,
+        2.6203042353349515,
+        1.9854723079696395,
+        2.9245393532266633,
+        4.586048143165156,
+        5.95635651256386
+      ],
+      "top_interactions": {
+        "key_residue_contacts": {
+          "ASN705": {
+            "contact_count_within_4A": 6,
+            "minimum_distance_A": 2.865,
+            "contacts": [
+              {
+                "protein_atom": "OD1",
+                "ligand_atom": "atom_19",
+                "distance_A": 2.865
+              },
+              {
+                "protein_atom": "OD1",
+                "ligand_atom": "atom_13",
+                "distance_A": 3.417
+              },
+              {
+                "protein_atom": "OD1",
+                "ligand_atom": "atom_18",
+                "distance_A": 3.617
+              },
+              {
+                "protein_atom": "OD1",
+                "ligand_atom": "atom_14",
+                "distance_A": 3.914
+              },
+              {
+                "protein_atom": "CG",
+                "ligand_atom": "atom_19",
+                "distance_A": 3.959
+              },
+              {
+                "protein_atom": "N",
+                "ligand_atom": "atom_13",
+                "distance_A": 3.991
+              }
+            ]
+          },
+          "GLN711": {
+            "contact_count_within_4A": 0,
+            "minimum_distance_A": null,
+            "contacts": []
+          },
+          "ARG752": {
+            "contact_count_within_4A": 1,
+            "minimum_distance_A": 2.818,
+            "contacts": [
+              {
+                "protein_atom": "NH2",
+                "ligand_atom": "atom_4",
+                "distance_A": 2.818
+              }
+            ]
+          },
+          "THR877": {
+            "contact_count_within_4A": 6,
+            "minimum_distance_A": 2.844,
+            "contacts": [
+              {
+                "protein_atom": "OG1",
+                "ligand_atom": "atom_19",
+                "distance_A": 2.844
+              },
+              {
+                "protein_atom": "OG1",
+                "ligand_atom": "atom_20",
+                "distance_A": 3.303
+              },
+              {
+                "protein_atom": "CB",
+                "ligand_atom": "atom_19",
+                "distance_A": 3.566
+              },
+              {
+                "protein_atom": "CB",
+                "ligand_atom": "atom_20",
+                "distance_A": 3.602
+              },
+              {
+                "protein_atom": "CB",
+                "ligand_atom": "atom_17",
+                "distance_A": 3.804
+              },
+              {
+                "protein_atom": "OG1",
+                "ligand_atom": "atom_18",
+                "distance_A": 3.821
+              }
+            ]
+          }
+        },
+        "hbond_candidates": [],
+        "minimum_protein_ligand_heavy_atom_distance": {
+          "protein_atom": "ARG752:NH2",
+          "ligand_atom": "atom_4",
+          "distance_A": 2.818
+        },
+        "obvious_heavy_atom_clash_lt_2A": false
+      }
+    }
+  ],
+  "pairwise_top_pose_direct_rmsd": [
+    {
+      "seed_i": 42,
+      "seed_j": 123,
+      "direct_rmsd_A": 0.014120232022914831,
+      "mapping_count": 1
+    },
+    {
+      "seed_i": 42,
+      "seed_j": 2026,
+      "direct_rmsd_A": 0.02895151941074041,
+      "mapping_count": 1
+    },
+    {
+      "seed_i": 42,
+      "seed_j": 7,
+      "direct_rmsd_A": 0.02591469522435921,
+      "mapping_count": 1
+    },
+    {
+      "seed_i": 42,
+      "seed_j": 99,
+      "direct_rmsd_A": 0.0019760470401185355,
+      "mapping_count": 1
+    },
+    {
+      "seed_i": 123,
+      "seed_j": 2026,
+      "direct_rmsd_A": 0.03585752228977788,
+      "mapping_count": 1
+    },
+    {
+      "seed_i": 123,
+      "seed_j": 7,
+      "direct_rmsd_A": 0.025768197453450308,
+      "mapping_count": 1
+    },
+    {
+      "seed_i": 123,
+      "seed_j": 99,
+      "direct_rmsd_A": 0.01309489177031226,
+      "mapping_count": 1
+    },
+    {
+      "seed_i": 2026,
+      "seed_j": 7,
+      "direct_rmsd_A": 0.034858216220788475,
+      "mapping_count": 1
+    },
+    {
+      "seed_i": 2026,
+      "seed_j": 99,
+      "direct_rmsd_A": 0.03035504194410826,
+      "mapping_count": 1
+    },
+    {
+      "seed_i": 7,
+      "seed_j": 99,
+      "direct_rmsd_A": 0.026292312836373087,
+      "mapping_count": 1
+    }
+  ],
+  "best_top_score_run": 99,
+  "top_pose_files": [
+    "results/redocking_2AM9/poses/seed_42_pose_01.sdf",
+    "results/redocking_2AM9/poses/seed_123_pose_01.sdf",
+    "results/redocking_2AM9/poses/seed_2026_pose_01.sdf",
+    "results/redocking_2AM9/poses/seed_7_pose_01.sdf",
+    "results/redocking_2AM9/poses/seed_99_pose_01.sdf"
+  ]
+}

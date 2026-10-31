@@ -1,0 +1,45 @@
+# Python and notebook caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+*.tmp
+*.swp
+
+# Local environments and machine-specific Conda exports
+environment.yml
+environment.initial.yml
+environment.repaired.yml
+
+# Source datasets and prepared coordinate collections pending provenance review
+data/androgens_clusters_teacher_profile.xlsx
+data/PDB/
+data/ligands/
+data/prepared/
+
+# Large or redundant docking intermediates
+results/**/*.pdbqt
+results/**/*.sdf
+results/**/*.pdb
+results/**/*.cif
+results/**/*.pse
+results/**/*.log
+results/summary_only/
+release/
+results/**/poses/
+results/**/pose_files/
+results/**/top_sdf/
+results/**/validated_top_sdf/
+results/**/validated_top_pdbqt/
+
+# Local release staging scratch space, if created outside the audited manifests
+release/_scratch/
+
+# Known historical artifacts requiring manual provenance/path review
+reports/github_release_audit.md
+figures/receptor_ensemble/met895_local_environment.pml
+figures/receptor_ensemble/pocket_alignment.pml
+figures/receptor_ensemble/representative_poses.pml
+results/c17_analysis/c17_analysis_manifest.json
+results/orientation_robustness/analysis_summary.json
+results/receptor_ensemble/preparation_summary.json

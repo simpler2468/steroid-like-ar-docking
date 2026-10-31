@@ -1,0 +1,80 @@
+{
+  "status": "pass",
+  "step": "6A",
+  "docking_rerun": false,
+  "target_compounds": [
+    5373,
+    705
+  ],
+  "receptors": {
+    "2AM9": "available",
+    "2AMA": "available"
+  },
+  "expected_top_pose_runs": 40,
+  "actual_top_pose_runs": 40,
+  "all_pose_rank_one": true,
+  "seeds": [
+    7,
+    11,
+    17,
+    42,
+    73,
+    99,
+    101,
+    123,
+    314,
+    2026
+  ],
+  "regions": [
+    "c17_core",
+    "c17_ethynyl",
+    "c17_local",
+    "c17_nonring_substituent",
+    "c17_oh"
+  ],
+  "atom_mapping": {
+    "cluster_416_row_5373": {
+      "c17_core": [
+        18
+      ],
+      "c17_oh": [
+        18,
+        19
+      ],
+      "c17_nonring_substituent": [],
+      "c17_local": [
+        18,
+        19
+      ],
+      "c17_ethynyl": []
+    },
+    "cluster_176_row_705": {
+      "c17_core": [
+        2
+      ],
+      "c17_oh": [
+        2,
+        3
+      ],
+      "c17_nonring_substituent": [
+        0,
+        1
+      ],
+      "c17_local": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "c17_ethynyl": [
+        0,
+        1
+      ]
+    }
+  },
+  "distance_screen_note": "<2.5 A is a geometric screen only; no contact is labeled a hydrogen bond or steric clash from distance alone.",
+  "source_tables": {
+    "2AM9": "results/orientation_robustness/all_pose_orientation.csv",
+    "2AMA": "results/receptor_ensemble/multiseed_orientation/2AMA/orientation_all_poses.csv"
+  }
+}

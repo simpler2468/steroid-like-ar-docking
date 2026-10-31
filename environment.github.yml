@@ -1,0 +1,21 @@
+name: steroid_docking
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - vina=1.2.7
+  - rdkit
+  - meeko=0.8.0
+  - gemmi=0.7.5
+  - pdbfixer=1.12
+  - openmm=8.6
+  - prody
+  - numpy
+  - scipy
+  - pandas
+  - openpyxl
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - biopython
+  - pip
