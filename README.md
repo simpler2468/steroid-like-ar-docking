@@ -6,7 +6,7 @@
 
 This project follows up on [**Bioactivity Profile Distillation**](https://github.com/simpler2468/bioactivity-profile-distillation), which characterized chemical clusters using teacher-derived *in vitro* bioactivity profiles and pharmacological-association (PA) term annotations.
 
-Four clusters—**3, 176, 246, and 416**—contained an association with the term **“Androgens.”** Crucially, **only one compound in each cluster carried that annotation**. This observation motivated us to further explore the AR-binding potential of these steroid-like compounds as candidate androgen agonists.
+Four clusters—**3, 176, 246, and 416**—contained an association with the term **“Androgens.”** Crucially, **only one compound in each cluster carried that annotation**. This observation motivated us to further explore the AR-binding potential of these steroid-like compounds as potential AR ligands.
 
 The compounds nevertheless showed steroid-like structural features, motivating a specific follow-up question:
 
